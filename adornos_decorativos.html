@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adornos decorativos</title>
+    <link rel="stylesheet" href="adornos_decorativos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="adornos_decorativos.js" defer></script>
+</head>
+<body>
+    <!---------------------------------------->
+    <!--|estructuracion_adornos_decorativos|-->
+    <!---------------------------------------->
+    <main class="contenedor_adornos">
+        <header class="encabezado_adornos">
+            <div class="icono_encabezado">
+                <i class="fa-solid fa-house"></i>
+            </div>
+            <h1 class="titulo_adornos">Adornos Decorativos</h1>
+            <p class="descripcion_adornos">Descubre adornos ideales para darle un estilo especial a tus espacios.</p>
+        </header>
+        <!--------------------->
+        <!--|resumen_carrito|-->
+        <!--------------------->
+        <section class="resumen_carrito">
+            <div class="informacion_carrito">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cantidad_carrito">0 productos</span>
+            </div>
+            <strong id="total_carrito">$0.00</strong>
+            <button id="vaciar_carrito" class="boton_vaciar" type="button"><i class="fa-solid fa-trash"></i>Vaciar</button>
+        </section>
+        <!----------------------->
+        <!--|galeria_productos|-->
+        <!----------------------->
+        <section class="galeria_adornos">
+            <article class="tarjeta_adornos" data-nombre="Jarrón Artesanal" data-precio="29.99" data-descripcion="Jarrón decorativo elaborado con un diseño artesanal para complementar diferentes espacios del hogar.">
+                <div class="imagen_adornos">
+                    <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=800&q=80" alt="Jarrón decorativo">
+                    <button class="boton_favorito" type="button" aria-label="Agregar a favoritos"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="informacion_adornos">
+                    <span class="categoria_adornos">Decoración</span>
+                    <h2>Jarrón Artesanal</h2>
+                    <p>Diseño elegante para decorar mesas, estanterías y salas.</p>
+                    <div class="pie_tarjeta">
+                        <strong class="precio_adornos">$29.99</strong>
+                        <button class="boton_detalles" type="button"><i class="fa-solid fa-circle-info"></i>Detalles</button>
+                    </div>
+                    <button class="boton_carrito" type="button"><i class="fa-solid fa-cart-plus"></i>Agregar al carrito</button>
+                </div>
+            </article>
+            <article class="tarjeta_adornos" data-nombre="Vela Aromática" data-precio="18.50" data-descripcion="Vela decorativa con un estilo moderno, ideal para crear un ambiente cálido y agradable.">
+                <div class="imagen_adornos">
+                    <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=80" alt="Vela decorativa">
+                    <button class="boton_favorito" type="button" aria-label="Agregar a favoritos"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="informacion_adornos">
+                    <span class="categoria_adornos">Ambiente</span>
+                    <h2>Vela Aromática</h2>
+                    <p>Un detalle sencillo para crear espacios cálidos y acogedores.</p>
+                    <div class="pie_tarjeta">
+                        <strong class="precio_adornos">$18.50</strong>
+                        <button class="boton_detalles" type="button"><i class="fa-solid fa-circle-info"></i>Detalles</button>
+                    </div>
+                    <button class="boton_carrito" type="button"><i class="fa-solid fa-cart-plus"></i>Agregar al carrito</button>
+                </div>
+            </article>
+            <article class="tarjeta_adornos" data-nombre="Figura Decorativa" data-precio="34.75" data-descripcion="Figura decorativa de estilo contemporáneo para aportar personalidad y elegancia a cualquier espacio.">
+                <div class="imagen_adornos">
+                    <img src="https://images.unsplash.com/photo-1618220179428-22790b461013?auto=format&fit=crop&w=800&q=80" alt="Figura decorativa">
+                    <button class="boton_favorito" type="button" aria-label="Agregar a favoritos"><i class="fa-regular fa-heart"></i></button>
+                </div>
+                <div class="informacion_adornos">
+                    <span class="categoria_adornos">Accesorios</span>
+                    <h2>Figura Decorativa</h2>
+                    <p>Pieza moderna para complementar diferentes estilos de decoración.</p>
+                    <div class="pie_tarjeta">
+                        <strong class="precio_adornos">$34.75</strong>
+                        <button class="boton_detalles" type="button"><i class="fa-solid fa-circle-info"></i>Detalles</button>
+                    </div>
+                    <button class="boton_carrito" type="button"><i class="fa-solid fa-cart-plus"></i>Agregar al carrito</button>
+                </div>
+            </article>
+        </section>
+        <!------------------------------->
+        <!--|mostrar_ventana_emergente|-->
+        <!------------------------------->
+        <div id="modal_adornos" class="modal_adornos oculto">
+            <div class="contenido_modal">
+                <button id="cerrar_modal" class="cerrar_modal" type="button"><i class="fa-solid fa-xmark"></i></button>
+                <i class="fa-solid fa-house-chimney" id="icono_modal"></i>
+                <h2 id="titulo_modal">Producto</h2>
+                <p id="descripcion_modal">Información del producto.</p>
+                <strong id="precio_modal">$0.00</strong>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
